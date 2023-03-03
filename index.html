@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/411875ad99.css" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/411875ad99.js" crossorigin="anonymous"></script>
+    <link rel="script" href="script.js" />
   </head>
   <body>
     <!-- Navbar -->
@@ -16,7 +19,7 @@
       <nav id="navbar" class="navbar navbar-expand-lg navbar-light" style="background-color: #f1f3ff">
         <div class="container">
           <a class="navbar-brand" href="#logo">
-            <img src="/img/logo.png" alt="binar" width="60" height="24" />
+            <img src="/img/logo.png" alt="binar" width="80" height="24" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,18 +38,17 @@
               <li class="nav-item">
                 <a class="nav-link text-dark me-2" href="#faq">FAQ</a>
               </li>
-              <button type="button" class="btn btn-success ms-2">Register</button>
+              <button type="button" class="btn ms-2 fw-bold" style="background-color: #5cb85f; color: white">Register</button>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <div class="container-fluid">
-      <section class="jumbotron" style="background-color: #f1f3ff">
+    <section class="jumbotron" style="background-color: #f1f3ff">
+      <div class="container-xl">
         <div class="row justify-content-around fs-6">
           <div class="col-md-6 mt-5">
             <h1>
@@ -58,20 +60,19 @@
               terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu <br />
               untuk sewa mobil selama 24 jam
             </p>
-            <button type="button" class="btn btn-success">Mulai Sewa Mobil</button>
+            <button type="button" class="btn fw-bold" style="background-color: #5cb85f; color: white">Mulai Sewa Mobil</button>
           </div>
-          <div class="col-md-4 mt-5">
-            <img src="/img/img_car.png" alt="mercedes" style="width: 600px; height: 350px" />
+          <div class="col-md-6 mt-5">
+            <img src="/img/img_car.png" alt="mercedes" style="width: 600px; height: 350px" class="float-end" />
           </div>
         </div>
-      </section>
-    </div>
-
+      </div>
+    </section>
     <!-- Akhir Jumbotron -->
 
     <!-- Best Rental -->
-    <div class="container">
-      <section class="bestrental" style="background-color: #fff">
+    <section class="bestrental" style="background-color: #fff" id="service">
+      <div class="container">
         <div class="row justify-content-around">
           <div class="col-md-4 mt-5">
             <img src="/img/img_service.png" alt="service" />
@@ -91,15 +92,15 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- Akhir Best Rental -->
     <!-- Why us -->
-    <div class="container p-5">
-      <h3 class="mt-5 fw-bold">Why Us?</h3>
-      <p>Mengapa harus pilih Binar Car Rental?</p>
-      <section class="whyus" style="background-color: #fff">
+    <section class="whyus" style="background-color: #fff" id="whyus">
+      <div class="container p-5">
+        <h3 class="mt-5 fw-bold">Why Us?</h3>
+        <p>Mengapa harus pilih Binar Car Rental?</p>
         <div class="row mt-5">
           <div class="col-md-3">
             <img src="/img/lengkap.png" alt="lengkap" />
@@ -122,17 +123,143 @@
             <p class="mt-3">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <!-- Akhir Why us -->
 
     <!-- Testimonial -->
-    <div class="container-fluid">
-      <section class="testimonial">
+    <section class="testimonial" id="testimonial">
+      <div class="container-fluid p-5">
         <h4 class="text-center fw-bold">Testimonial</h4>
         <p class="text-center mt-4">Berbagai review positif dari para pelanggan kami</p>
-      </section>
-    </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 35rem; height: 15rem">
+              <img src="img/testi2.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 35rem; height: 15rem">
+              <img src="img/testi2.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 35rem; height: 15rem">
+              <img src="img/testi4.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-md-12 text-center mt-4">
+            <button type="button" class="btn"><img src="img/Left_button.png" alt="left-button" /></button>
+            <button type="button" class="btn"><img src="img/Right_button.png" alt="right-button" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Akhir Testimonial -->
+
+    <!-- Getting Starterd Section -->
+    <section class="started">
+      <div class="container mt-5 p-5 rounded" style="background-color: #0d28a6">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h3 class="text-center text-white mb-4">Sewa Mobil di (Lokasimu) Sekarang</h3>
+            <p class="text-center mt-3 text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus tempora ratione repellendus ullam, nobis sint iusto blanditiis officia ducimus! Veniam nesciunt assumenda nam voluptas sed ut, accusantium animi totam eaque!
+            </p>
+            <div class="text-center mt-4 p-4">
+              <button type="button" class="btn ms-2 fw-bold" style="background-color: #5cb85f; color: white">Mulai Sewa Mobil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Getting Started Section -->
+
+    <!-- Frequently Asked Questions Section-->
+    <section class="faq" id="faq">
+      <div class="container p-5 mt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="fw-bold">Frequently Asked Questions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="accordion morePadding accordionSpacing panel panel-group" id="accordionExample">
+              <div class="accordion-item morePadding accordionSpacing panel panel-group">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Apa saja syarat yang dibutuhkan?</button>
+                </h2>
+              </div>
+            </div>
+            <div class="accordion morePadding accordionSpacing panel panel-group" id="accordionExample">
+              <div class="accordion-item morePadding accordionSpacing panel panel-group">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Berapa hari minimal sewa mobil lepas kunci?</button>
+                </h2>
+              </div>
+            </div>
+            <div class="accordion morePadding accordionSpacing panel panel-group" id="accordionExample">
+              <div class="accordion-item morePadding accordionSpacing panel panel-group">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Berapa hari sebelumnya sebaiknya booking sewa mobil?
+                  </button>
+                </h2>
+              </div>
+            </div>
+            <div class="accordion morePadding accordionSpacing panel panel-group" id="accordionExample">
+              <div class="accordion-item morePadding accordionSpacing panel panel-group">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Apakah ada biaya antar-jemput?</button>
+                </h2>
+              </div>
+            </div>
+            <div class="accordion morePadding accordionSpacing panel panel-group" id="accordionExample">
+              <div class="accordion-item morePadding accordionSpacing panel panel-group">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Bagaimana jika terjadi kecelakaan?</button>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Frequently Asked Questions Section-->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container mt-5 p-5">
+        <div class="row">
+          <div class="col-3">
+            <p>Jalan Suroyo No. 161 Mayangan Kota <br />Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+          </div>
+          <div class="col-2">
+            <a href="#service" class="a-footer">Our services</a><br /><br />
+            <a href="#whyus" class="a-footer">Why Us</a><br /><br />
+            <a href="#testimonial" class="a-footer">Testimonial</a><br /><br />
+            <a href="#faq" class="a-footer">FAQ</a><br /><br />
+          </div>
+          <div class="col-4">
+            <p>Connect with us</p>
+            <br />
+            <a href="#" class="me-2"><img src="img/icon_facebook.png" alt="icon-fb" /></a>
+            <a href="#" class="me-2"><img src="img/icon_instagram.png" alt="icon-ig" /></a>
+            <a href="#" class="me-2"><img src="img/icon_twitter.png" alt="icon-twitter" /></a>
+            <a href="#" class="me-2"><img src="img/icon_mail.png" alt="icon-mail" /></a>
+            <a href="#"><img src="img/icon_twitch.png" alt="icon-twitch" /></a>
+          </div>
+          <div class="col-3">
+            <p>Copyright Binar 2022</p>
+            <img src="img/logo.png" alt="logo" width="80" height="24" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhit Footer -->
   </body>
 </html>
